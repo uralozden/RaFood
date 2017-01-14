@@ -1,2 +1,3 @@
 _app/node_modules/*
+_app/bower_components/*
 api/*

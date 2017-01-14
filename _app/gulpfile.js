@@ -1,10 +1,8 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var concat = require('gulp-concat');
 var minifyCSS = require('gulp-csso');
 
-
-var sourceLess = './source/less';
-var targetCss = './source/css';
 
 gulp.task('css', function(){
   gulp.watch('../_source/css/*', ['css']);
@@ -14,4 +12,12 @@ gulp.task('css', function(){
     .pipe(gulp.dest('../assets/css'))
 });
 
-gulp.task('default', [ 'css' ]);
+
+gulp.task('js', function() {
+  gulp.watch('../_source/js/*', ['js']);
+  return gulp.src('../_source/js/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('../assets/js/'));
+});
+
+gulp.task('default', [ 'css','js']);
