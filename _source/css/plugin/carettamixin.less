@@ -1,0 +1,120 @@
+.input(@width: auto) {
+    width: @width;
+    z-index: 333;
+    position: relative;
+    .radius(10px);
+    color: #777;
+    border: 1px solid #777;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+}
+
+.radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.transition (@time: 0.4s) {
+    -webkit-transition: all @time ease;
+    -moz-transition: all @time ease;
+    -o-transition: all @time ease;
+}
+
+.box-shadow (@string) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow: @string;
+    box-shadow: @string;
+}
+
+.badge(@badge-color) {
+    .badge {
+        background: @badge-color;
+        margin-right: 30px;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        text-align: center;
+        border-radius: 1px;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: inherit;
+            border-radius: inherit;
+        }
+        &:before {
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+        }
+        &:after {
+            -webkit-transform: rotate(60deg);
+            -moz-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+            -o-transform: rotate(60deg);
+        }
+        i {
+            color: @menu-bg;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 9999;
+            width: 30px;
+            font-size: 30px;
+        }
+        &.yellow {
+            background: @yellow !important;
+        }
+    }
+}
+
+.fl {
+    float: left !important;
+    display: block;
+}
+
+.fr {
+    float: right !important;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.tar {
+    text-align: right;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+.nobg{
+    background: none !important;
+}

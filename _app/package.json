@@ -8,7 +8,9 @@
     "gulp": "^3.9.1",
     "vue": "^2.1.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
