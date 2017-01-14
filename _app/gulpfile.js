@@ -15,7 +15,12 @@ gulp.task('css', function(){
 
 gulp.task('js', function() {
   gulp.watch('../_source/js/*', ['js']);
-  return gulp.src('../_source/js/*.js')
+  //['./node_modules/vue/dist/vue.min.js'],
+  return gulp.src(
+    [
+      './node_modules/vue/dist/vue.min.js',
+      '../_source/js/update.js']
+    )
     .pipe(concat('all.js'))
     .pipe(gulp.dest('../assets/js/'));
 });
