@@ -1,0 +1,30 @@
+{
+  "name": "rafood",
+  "version": "1.0.0",
+  "description": "random food builder",
+  "main": "project.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "vue": "^2.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uralozden/RaFood.git"
+  },
+  "keywords": [
+    "random",
+    "food",
+    "vue.js"
+  ],
+  "author": "uralozden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uralozden/RaFood/issues"
+  },
+  "homepage": "https://github.com/uralozden/RaFood#readme"
+}
