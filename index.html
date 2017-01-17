@@ -16,7 +16,7 @@
                     <button class="getfood" v-on:click="search()">
                         YEMEK GETİR
                     </button>
-                    <div id="result" v-if="result">
+                    <div class="result" v-if="result">
                         <h1>
                             <a target="_blank" v-bind:href="result.url">{{result.name}}</a>
                         </h1>
