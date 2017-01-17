@@ -7,18 +7,20 @@
     <script src="assets/js/all.js"></script>
 </head>
 <body>
+
+
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12  col-xs-12">
-                <div id="app">
-                    <input type="text" v-model="query">
-                    <button v-on:click="search()">serach</button>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="app" >
+                    <button class="getfood" v-on:click="search()">
+                        YEMEK GETİR
+                    </button>
                     <div id="result" v-if="result">
                         <h1>
                             <a target="_blank" v-bind:href="result.url">{{result.name}}</a>
                         </h1>
                         <img v-bind:src="result.image" alt="">
-                        
                     </div>
                 </div>
             </div>
