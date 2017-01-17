@@ -19,6 +19,7 @@ gulp.task('js', function() {
   return gulp.src(
     [
       './node_modules/vue/dist/vue.min.js',
+      './node_modules/vue-resource/dist/vue-resource.min.js',      
       '../_source/js/update.js']
     )
     .pipe(concat('all.js'))

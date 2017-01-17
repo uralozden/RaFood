@@ -10,7 +10,8 @@
     "gulp-csso": "^2.0.0",
     "gulp-less": "^3.3.0",
     "gulp-watch": "^4.3.11",
-    "vue": "^2.1.8"
+    "vue": "^2.1.8",
+    "vue-resource": "^1.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
