@@ -19,27 +19,32 @@
                     <div class="result" v-if="result">
                         <div class="row">
                             <div class="col-md-12">
-                                <img v-bind:src="result.image" alt="">
+                                <img v-bind:src="result.image" class="food-image" alt="">
                             </div>
                         </div>
                        
                         <div class="row content">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
                                 <p class="food-name">
                                     {{result.name}}
                                 </p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
                                 <a target="_blank" class="btn button1" v-bind:href="result.url">
                                     Tarife Git
                                 </a>
                             </div>
-                            <div class="col-md-6">
-                                <a target="_blank" class="btn button2" href="http://www.yemeksepeti.com">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                
+                                <a target="_blank" class="btn button2" v-on:click="GoCart(result.name)">
                                     Sipariş Ver
+                                    <img src="assets/images/ys-logo.jpg" alt="">
                                 </a>
+
                             </div>
-                            <a href="#" class="btn button3" v-on:click="GetFood()">Beğenmedim</a>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <a href="#" class="btn button3" v-on:click="GetFood()">Beğenmedim</a>
+                            </div>
                         </div>
                     </div>
                 </div>

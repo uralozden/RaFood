@@ -38,7 +38,7 @@ h1{
 		background: url("../images/content-bg.png") no-repeat top center;
 		padding:10px 0;
 	}
-	 img{
+	 .food-image{
 		 width: 100%;
 		 display: block;
 		 min-height: 220px;
@@ -51,38 +51,67 @@ h1{
 		 margin-bottom: 20px;
 	 }
 
-	 .button1{
-		 background: #0091ab;
-		 text-align: center;
-		 padding:10px 20px;
-		 color:#fff;
-		 font-size: 1.3em;
-		 border-radius: 0;
-		 font-weight:light;
+	 .btn{
+		 min-width:120px;
+		&.button1{
+			background: #0091ab;
+			text-align: center;
+			padding:10px 20px;
+			color:#fff;
+			font-size: 1.3em;
+			border-radius: 0;
+			font-weight:light;
+		}
+
+		&.button2{
+			background: #ab0012;
+			text-align: center;
+			padding:10px 20px;
+			color:#fff;
+			font-size: 1.3em;
+			border-radius: 0;
+			font-weight:light;
+		}
+
+		&.button3{
+			background:none;
+			border: 1px solid #18ab00;
+			text-align: center;
+			padding:10px 20px;
+			color:#18ab00;
+			font-size: 1.3em;
+			border-radius: 0;
+			font-weight:light;
+			margin:15px 0;
+			box-shadow: 0 0 15px rgba(0,0,0,.45);
+		}
+
 	 }
 
-	 .button2{
-		 background: #ab0012;
-		 text-align: center;
-		 padding:10px 20px;
-		 color:#fff;
-		 font-size: 1.3em;
-		 border-radius: 0;
-		 font-weight:light;
-	 }
-
-	 .button3{
-		 background:none;
-		 border: 1px solid #18ab00;
-		 text-align: center;
-		 padding:10px 20px;
-		 color:#18ab00;
-		 font-size: 1.3em;
-		 border-radius: 0;
-		 font-weight:light;
-		 margin:15px 0;
-		 box-shadow: 0 0 15px rgba(0,0,0,.45);
-	 }
+	 
 
 
  }
+
+
+@media (max-width: 600px) {
+	h1{
+		font-size: 4em;
+	}
+	.result{
+		.food-image{
+			min-height: 140px;
+		}
+		p.food-name{
+			font-size: 1.5em;
+		}
+		.btn{
+			margin:10px;
+			display: block;
+			&.button3{
+				margin:10px;
+			}
+		}
+		
+	}
+}

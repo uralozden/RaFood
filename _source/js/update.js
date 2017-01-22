@@ -1,7 +1,6 @@
 window.addEventListener('load',() => {
 
-    // var ApiUrl ="http://playship.net/rafood/api.php/food_info/"; /* YOUR API URL */
-    var ApiUrl ="http://localhost/Rafood/api/api.php/food_info/"; /* YOUR API URL */
+    var ApiUrl ="http://playship.net/rafood/api.php/food_info/"; /* YOUR API URL */
     var app = new Vue({
     el: '#app',
     data: {
@@ -16,8 +15,9 @@ window.addEventListener('load',() => {
                 result.json;
                 this.result = JSON.parse(result.body);
             });
-
- 
+        },
+        GoCart:function(data){
+            window.open('https://www.yemeksepeti.com/istanbul/arama#ors:true|st:'+data,'_blank');
         }
     }, 
     created(){
