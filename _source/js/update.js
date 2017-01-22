@@ -1,6 +1,7 @@
 window.addEventListener('load',() => {
 
-    var ApiUrl ="http://playship.net/rafood/api.php/food_info/"; /* YOUR API URL */
+    // var ApiUrl ="http://playship.net/rafood/api.php/food_info/"; /* YOUR API URL */
+    var ApiUrl ="http://localhost/Rafood/api/api.php/food_info/"; /* YOUR API URL */
     var app = new Vue({
     el: '#app',
     data: {

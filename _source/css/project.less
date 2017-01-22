@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&subset=cyrillic-ext,latin-ext');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+
 html,body{ 
     background:url('../images/food-salad-restaurant-person.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -9,46 +13,76 @@ html,body{
   width: 100%;
   display: block;
   position: relative;
+  font-family: 'Yeseva One', cursive;
 }
 
-.container{
-	position: relative;
-	height: 100%;
-	min-height: 100%;
-	display: block;
-	.row{
-		position: absolute;
-		top: 50%;
-		left:50%;
-		margin:-125px 0 0 -175px; 
-		width: 350px;
-		text-align: center;
-		height: 250px;
-		.result{
-    	border-radius: 10px;			
-			background: #293132;
-			padding:20px;
-			text-align: center;
-			margin:20px 0;
-			h1{
-				font-weight: lighter;
-				font-size: 20px;
-				a{
-					color: #fff;
-					text-decoration: none;
-				}
-			}
-		}
+.clear{
+	clear:both;
+}
+
+h1{
+	font-size: 8em;
+	color: #fff;
+	text-align: center;
+	margin:40px 0;
+	text-shadow: 5px 5px 10px #000;
+}
+
+ 
+
+ .result{
+	 background: #fff;
+	 box-shadow: 0 0 20px #000;
+	 text-align: center;
+	.content{
+		background: url("../images/content-bg.png") no-repeat top center;
+		padding:10px 0;
 	}
-}
+	 img{
+		 width: 100%;
+		 display: block;
+		 min-height: 220px;
+		 background: url("../images/loading.gif") no-repeat center center;
+	 }
+	  p.food-name{
+		 font-size: 2.4em;
+		 text-align: center;
+		 text-decoration: underline;
+		 margin-bottom: 20px;
+	 }
 
-button.getfood{
-    color: #fff;
-    background:#50D8D7;
-		box-shadow: 0 0 10px #769095;
-    border: none;
-    border-radius: 50px;
-    padding:20px 20px;;
-		font-size:35px;
-		margin:0 auto;
-}
+	 .button1{
+		 background: #0091ab;
+		 text-align: center;
+		 padding:10px 20px;
+		 color:#fff;
+		 font-size: 1.3em;
+		 border-radius: 0;
+		 font-weight:light;
+	 }
+
+	 .button2{
+		 background: #ab0012;
+		 text-align: center;
+		 padding:10px 20px;
+		 color:#fff;
+		 font-size: 1.3em;
+		 border-radius: 0;
+		 font-weight:light;
+	 }
+
+	 .button3{
+		 background:none;
+		 border: 1px solid #18ab00;
+		 text-align: center;
+		 padding:10px 20px;
+		 color:#18ab00;
+		 font-size: 1.3em;
+		 border-radius: 0;
+		 font-weight:light;
+		 margin:15px 0;
+		 box-shadow: 0 0 15px rgba(0,0,0,.45);
+	 }
+
+
+ }
